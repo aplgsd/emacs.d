@@ -17,6 +17,8 @@
 (if (fboundp 'menu-bar-mode)
   (menu-bar-mode -1))
 
-
+(require 'recentf)
+(recentf-mode 1)
+(setq recentf-max-menu-items 25)
 
 (provide 'init-gui-frames)
