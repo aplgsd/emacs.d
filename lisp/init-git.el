@@ -196,5 +196,9 @@
 
 ;; }}
 
+(require 'server)
+ (and (>= emacs-major-version 23)
+     (defun server-ensure-safe-dir (dir) "Noop" t))
+
 (provide 'init-git)
 
